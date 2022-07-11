@@ -65,23 +65,25 @@ const viewedSection = (sectionView) => {
 
 // add active property to section in viewport
 const activeSection = () => {
-    for(let section of sections) {
+
+    const activeList = document.querySelectorAll('.menu__link')
+    sections.forEach((section, idx) => {
         
         // section doesn't have active property add this property to it
         if (viewedSection(section)){ 
-            if(!section.classList.contains('your-active-class')) {
+            if(!section.classList.contains('your-active-class') && !activeList[idx].classList.contains('active_List') ) {
                 section.classList.add('your-active-class')
+                activeList[idx].classList.add('active_List')
             }
         }
         // any section else will remove this property from him
         else {
             section.classList.remove('your-active-class')
+            activeList[idx].classList.remove('active_List')
         }
-    }
+    })
 }
-
 document.addEventListener('scroll',activeSection)
-
 
 /***************************  Scrolling Button ************************/
 
@@ -89,6 +91,7 @@ const topBTN = document.getElementById('top');
 
 window.onscroll =  () => {
     scrollFunction();
+    
 };
 
 const scrollFunction = () => {
