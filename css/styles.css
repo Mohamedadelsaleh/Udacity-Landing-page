@@ -11,10 +11,6 @@
 
 /* ---- Base Rules ---- */
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
@@ -37,6 +33,14 @@ h1 {
         margin: 2em 4rem 1em;
     }
 }
+
+@media only screen and (min-width: 25em){
+    h1 {
+        font-size: 4em;
+        margin: 0.5em 2rem 0.5em;
+    }
+}
+
 
 h2 {
     border-bottom: 1px solid #cc1;
@@ -89,19 +93,19 @@ section {
 
 .active_List {
     display: block;
-    padding: 1em;
+    padding: 1rem;
     font-weight: bold;
     text-decoration: none;
     background: rgb(30, 113, 230);
     color: rgb(255, 255, 255) !important;
-    font-size: 1.25rem;
+    font-size: 1rem;
     transition: ease-in-out 0.5s all;
 }
 
 .navbar__menu .menu__link:hover {
     background: rgb(30, 113, 230);
     color: rgb(255, 255, 255);
-    font-size: 1.25rem;
+    font-size: 1rem;
     transition: ease-in-out 0.5s all;
 
 }

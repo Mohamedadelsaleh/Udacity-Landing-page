@@ -55,6 +55,20 @@ const createNavList = () => {
 // Calling Function 
 createNavList()
 
+/********************** Smoothy Scrolling for onClick events **************************/
+
+const navLink = document.querySelectorAll('.menu__link');
+
+navLink.forEach((el) => el.addEventListener('click', (e) =>{
+        e.preventDefault();
+        const secID = e.target.getAttribute('href');
+        const section = document.querySelector(secID);
+        window.scrollTo({
+            top: section.offsetTop,
+            behavior:"smooth"
+        })
+    } 
+));
 
 // Add functionality to distinguish the section in view
 const viewedSection = (sectionView) => {
@@ -85,6 +99,7 @@ const activeSection = () => {
 }
 document.addEventListener('scroll',activeSection)
 
+
 /***************************  Scrolling Button ************************/
 
 const topBTN = document.getElementById('top');
@@ -105,5 +120,8 @@ const scrollFunction = () => {
 
 // when clicking on top button return to top at 0px
 topBTN.addEventListener('click', ()=>{
-    document.body.scrollTop = 0; 
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth"
+    }); 
 });
