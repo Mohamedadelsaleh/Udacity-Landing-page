@@ -20,7 +20,7 @@ Landing page project one
 
 ## Live Demo
 
-[Admin Dashboard Demo Live Link](https://mohamedadelsaleh.github.io/Admin-Dashboard/)
+[Admin Dashboard Demo Live Link](https://mohamedadelsaleh.github.io/Udacity-Landing-page/)
 
 
 ## Purpose
