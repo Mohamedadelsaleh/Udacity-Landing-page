@@ -32,6 +32,9 @@ Landing page project one
   
 
 ## Pictures
+![screencapture-mohamedadelsaleh-github-io-Udacity-Landing-page-2022-07-12-03_46_53](https://user-images.githubusercontent.com/26310663/178390891-9507784e-73e7-4922-8e4a-a9f10033d6db.png)
+![screencapture-mohamedadelsaleh-github-io-Udacity-Landing-page-2022-07-12-03_47_54](https://user-images.githubusercontent.com/26310663/178390899-36dce7bd-cd3e-4354-bb13-dc17f9219aea.png)
+![screencapture-mohamedadelsaleh-github-io-Udacity-Landing-page-2022-07-12-03_47_24](https://user-images.githubusercontent.com/26310663/178390901-2ad27b46-a961-40c0-92ca-9e980cc1f49a.png)
 
 
 ## Authors
